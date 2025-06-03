@@ -1,0 +1,15 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: 46-SB-Actuator-App
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        exclude: beans ,mappings
+  endpoint:
+     shutdown:
+      enabled: true
+   
